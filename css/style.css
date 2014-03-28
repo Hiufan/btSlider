@@ -1,0 +1,29 @@
+/*reset*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+
+/*layout*/
+.layout{width:500px;margin:0 auto;}
+
+/*slideShow*/
+.slideShow{width:100%;overflow:hidden;position: relative;}
+	.items{width:500px;height:340px;overflow: hidden;position:relative;list-style: none outside none;padding:0;margin:0;}
+		.items li {position: absolute;top: 0px;left: 0px;display:none;}
+		.items li:first-child {display:block;}
+		.items li img{width: 500px;height:340px;}
+	.pagination{float:right; list-style:none;margin: 0 10px;position: relative;bottom: 25px;}
+		.pagination li{text-align:center;color:#fff;float:left;width:20px;height:20px;line-height:20px;cursor:pointer;margin-right:5px;overflow:hidden;background:#000;border-radius:20px;}
+		.pagination li:hover{background:#C20305;}
+		.pagination li.active{background: #C20305;}
+
+	.preNext{width: 45px;height: 100px;position: absolute;top: 90px;background: url(../img/sprite.png) no-repeat 0 0;cursor: pointer;}
+	.pre{left: 0;}
+	.next{right: 0;background-position: right top;}
+
